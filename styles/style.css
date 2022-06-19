@@ -21,8 +21,8 @@ a:visited {
 /*
         NAV BAR
 */
-#mainIcon {
-  font-size: 200%;
+#mainLogo {
+  width: 50px;
   z-index: 2;
   color: yellow;
 }
@@ -42,7 +42,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   height: auto;
   position: fixed;
   top: 0;
