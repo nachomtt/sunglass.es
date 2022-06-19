@@ -1,0 +1,372 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1a1a1a;
+}
+
+a:link {
+  color: yellow;
+  text-decoration: none;
+}
+
+a:visited {
+  color: yellow;
+}
+
+/*
+        NAV BAR
+*/
+#mainIcon {
+  font-size: 200%;
+  z-index: 2;
+  color: yellow;
+}
+
+#menuIcon {
+  font-size: 200%;
+  z-index: 2;
+  color: yellow;
+  margin-right: 5vw;
+}
+.menuIconClass {
+  display: block;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  padding: 10px;
+  height: auto;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: #1a1a1ade;
+}
+.rightNav {
+  display: flex;
+  gap: 25px;
+}
+.rightNav a:link {
+  color: white;
+}
+.rightNav a:visited {
+  color: white;
+}
+.rightNavButton {
+  display: none;
+}
+#accessButtonNav h2 {
+  color: yellow;
+  font-weight: 700;
+}
+nav h2 {
+  margin-right: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: medium;
+}
+/*
+
+PORTADA
+
+*/
+
+main {
+  background-image: url(../assets/womenBackground.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: yellow;
+}
+
+.esLine {
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  left: 240px;
+  width: 52px;
+  height: 5px;
+}
+
+/*
+
+PRODUCTS SECTION
+
+*/
+
+.productsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  /* margin-top: 170px; */
+}
+
+.productImg {
+  width: 250px;
+  position: relative;
+  border-bottom: 1px solid black;
+}
+
+.product {
+  margin-top: 100px;
+  width: 100%;
+  height: 360px;
+  background-color: #1d1d1d;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+  justify-content: flex-start;
+}
+
+.productTexts {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.prices {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+  font-weight: 100;
+}
+
+.productPrice {
+  font-size: 50px;
+  color: white;
+}
+
+.discountContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.productDiscount {
+  font-size: 23px;
+  color: yellow;
+}
+
+.productOldPrice {
+  font-size: 18px;
+  position: relative;
+  color: rgb(105, 105, 105);
+  text-decoration: line-through;
+  bottom: 5px;
+}
+
+.productAbout {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  width: 200px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  color: rgb(212, 212, 212);
+}
+
+/*
+
+CONTACT US
+
+*/
+
+.contactArticle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+  margin-top: 50px;
+}
+
+.contactContainer {
+  /*background-image: url(./assets/contactBG.png); */
+  background-size: cover;
+  background-position: center;
+  /*border-radius: 25px;*/
+  width: 100vw;
+  /* 80 vw */
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  /*box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;*/
+}
+
+.contactHeader {
+  display: flex;
+  width: 100%;
+  /* justify-content: left; */
+  align-items: center;
+  flex-direction: row;
+  height: 100px;
+}
+
+.contactHeader h3 {
+  /* width: 100%; */
+  font-size: 45px;
+  font-weight: 500;
+  text-align: center;
+  color: yellow;
+  /*border-bottom: 1px solid yellow;*/
+  border-width: 1px;
+  padding-bottom: 3px;
+  margin-left: 40px;
+}
+.contactHeader i {
+  font-size: 40px;
+  color: yellow;
+}
+
+.contactHeader p {
+  width: 100%;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.labelStyle {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.inputStyle {
+  background: none;
+  border: none;
+  border-bottom: 1px solid yellow;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  border-top: 1px solid rgba(255, 255, 0, 0);
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  text-align: left;
+}
+
+textarea {
+  resize: none;
+  color: white;
+}
+
+.inputStyle:focus {
+  outline: none;
+  border: 1px solid yellow;
+  transition: 0.5s ease;
+}
+#accessButton {
+  text-align: center;
+  width: auto;
+  color: white;
+  height: 50px;
+  line-height: height;
+  background: none;
+  border: 1px solid yellow;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: white;
+  margin-top: 50px;
+  font-weight: 700;
+}
+/*Footer*/
+
+footer {
+  width: 100%;
+  height: 170px;
+  background-color: #1d1d1d;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  display: flex;
+  gap: 20px;
+  color: white;
+}
+footer a:link,
+a:visited {
+  color: white;
+}
+.footerText {
+  font-size: 25px;
+  font-weight: 300;
+  font-family: 300;
+  color: rgb(255, 255, 255);
+  border-radius: 25px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 480px) {
+  .product {
+    width: 270px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  .product {
+    border: 1px solid yellow;
+    transition: all 0.5s ease-out;
+  }
+  .product:hover {
+    border: 1px solid rgb(160, 31, 91);
+    transition: all 0.5s;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #menuIcon {
+    display: none;
+  }
+  .rightNav a {
+    display: block;
+  }
+  .rightNav {
+    display: flex;
+    gap: 15px;
+  }
+}
